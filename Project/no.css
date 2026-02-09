@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #bce1f7 0%, #f6ecb7 40%, #f6ecb7 60%, #bce1f7 100%);
+  font-family: 'Georgia', serif;
+  padding: 2rem;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(255, 105, 135, 0.3);
+  max-height: 25vh;
+  max-width: 200px;
+}
+
+.gif-wrapper {
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-top: 0%;
+}
+
+.gif-wrapper .tenor-gif-embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gif-wrapper .tenor-gif-embed > div {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+}
+
+.gif-wrapper .tenor-gif-embed iframe,
+.gif-wrapper .gif-backup-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
+}
+
+.fallback-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.fallback-link a {
+  color: #c9184a;
+}
